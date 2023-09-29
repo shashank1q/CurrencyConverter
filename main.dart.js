@@ -10609,8 +10609,9 @@ Un:function Un(a){this.a=a},
 axR(){return new A.vy(new A.a1t(),A.C(t.K,t.Qu))},
 a8v:function a8v(a,b){this.a=a
 this.b=b},
-wb:function wb(a,b){this.e=a
-this.a=b},
+wb:function wb(a,b,c){this.e=a
+this.CW=b
+this.a=c},
 a1t:function a1t(){},
 a1w:function a1w(){},
 Az:function Az(a){var _=this
@@ -42022,7 +42023,7 @@ $2(a,b){$.pr.push(a)
 $.ais.push(J.dp(b))},
 $S:16}
 A.EV.prototype={
-M(a){return new A.wb(new A.GJ(new A.Wt(),null),null)}}
+M(a){return new A.wb(new A.GJ(new A.Wt(),null),"Currency Converter",null)}}
 A.Wt.prototype={
 $2(a,b){var s=b.b
 if(s<1000)return new A.wl(s,null)
@@ -45515,11 +45516,11 @@ if(l==null)l=o.ax.b
 k.a.toString
 s=b==null?B.aj:b
 return new A.xJ(A.WG(new A.tO(o,s,B.ak,B.am,j,j),l,j,j,n),j)},
-YG(a){var s,r=this,q=null,p=r.a
-p=p.e
+YG(a){var s,r=this,q=null,p=r.a,o=p.e
+p=p.CW
 s=r.ga3W()
 r.a.toString
-return new A.z7(q,q,q,new A.acp(),q,q,q,q,q,p,B.FO,q,q,B.DB,r.ga43(),"",q,B.Lf,B.f8,q,s,q,q,B.lF,!1,!1,!1,!1,r.ga3u(),!0,q,q,q,new A.jG(r,t.bT))},
+return new A.z7(q,q,q,new A.acp(),q,q,q,q,q,o,B.FO,q,q,B.DB,r.ga43(),p,q,B.Lf,B.f8,q,s,q,q,B.lF,!1,!1,!1,!1,r.ga3u(),!0,q,q,q,new A.jG(r,t.bT))},
 M(a){var s,r=null,q=A.vl(!1,!1,this.YG(a),r,r,r,r,!0,r,r,new A.acq(),r,r,r)
 this.a.toString
 s=this.d
