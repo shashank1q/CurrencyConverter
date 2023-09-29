@@ -8627,7 +8627,7 @@ s=p}while(true)switch(s){case 0:if($.pr.length!==0){q=0
 s=1
 break}p=4
 s=7
-return A.Z(A.aEJ(A.hW("http://api.exchangeratesapi.io/v1/latest?access_key=02186aa5f9139dfc9fcd6dd5b6df97f4")),$async$WA)
+return A.Z(A.aEJ(A.hW("https://openexchangerates.org/api/latest.json?app_id=5f6af9bd37284e43b7307d7e30d9b0b8&base=USD")),$async$WA)
 case 7:n=b
 m=n.b
 if(J.d(m,200)){k=n
@@ -42047,7 +42047,7 @@ am(){return new A.Cx(A.aoI(null),A.aoI(null),B.j,B.k)}}
 A.Cx.prototype={
 M(a){return new A.pI(A.WA(),new A.afG(this),null,t.fP)},
 Gm(a){var s=null
-return A.mL(A.dC("ERROR: /n "+a,s,s,s,A.dY(15,"w","l"),s,s),s,s)},
+return A.mL(A.dC("ERROR CODE: "+a,s,s,s,A.dY(15,"w","l"),s,s),s,s)},
 af3(){this.al(new A.afN(this))},
 adN(){var s,r,q,p=this,o=null,n=A.dC("From",o,o,o,A.dY(40,"w","r"),o,o),m=A.aie(B.d6,2),l=A.oZ(15)
 l=A.pV(!1,!0,A.hm(o,A.mL(A.dC($.pr[p.d],o,o,o,A.dY(32,"lb","b"),o,o),o,o),B.t,o,o,new A.ck(o,o,m,l,o,o,B.ag),50,o,o,200),o,!0,o,o,o,o,o,o,o,o,o,new A.afJ(p),o,o,o,o,o,o)
