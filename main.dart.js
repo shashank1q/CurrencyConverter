@@ -42023,7 +42023,7 @@ $2(a,b){$.pr.push(a)
 $.ais.push(J.dp(b))},
 $S:16}
 A.EV.prototype={
-M(a){return new A.wb(new A.GJ(new A.Wt(),null),"Currency Converter",null)}}
+M(a){return new A.wb(new A.GJ(new A.Wt(),null),"Exchango: Currency converter",null)}}
 A.Wt.prototype={
 $2(a,b){var s=b.b
 if(s<1000)return new A.wl(s,null)
