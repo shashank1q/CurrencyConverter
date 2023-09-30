@@ -1,27 +1,30 @@
-import 'package:calculator/home.dart';
+import 'package:currency_converter/screens/desktop_screen.dart';
+import 'package:currency_converter/screens/mobile_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/gestures.dart';
 
-void main() {
-  runApp(const MainApp());
+void main(List<String> args) {
+  runApp(const CurrencyConverterApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class CurrencyConverterApp extends StatelessWidget {
+  const CurrencyConverterApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Homepage(),
-      scrollBehavior: MyScrollBarBehavious(),
+      title: "Exchango: Currency converter",
+      home: LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth < 1000) {
+            return MobilePage(
+              width: constraints.maxWidth,
+            );
+          }
+          return DesktopPage(
+            width: constraints.maxWidth,
+          );
+        },
+      ),
     );
   }
-}
-
-class MyScrollBarBehavious extends MaterialScrollBehavior {
-  @override
-  Set<PointerDeviceKind> get dragDevices => {
-        PointerDeviceKind.mouse,
-        PointerDeviceKind.touch,
-      };
 }
